@@ -1,11 +1,11 @@
+import os
 import csv
 
-FILENAME = 'users.csv'
+FILENAME = os.getenv('FILENAME', 'users.csv')
 
 
 def create_csv(response_data):
     user_csv = open(FILENAME, 'w')
-    csv_writer = csv.writer(user_csv)
     csv_writer = csv.writer(user_csv)
     count = 0
 
