@@ -1,5 +1,7 @@
 .idea
 .vscode
+*.csv
+*.xls
 *.orig
 *.pyc
 *.pyo
