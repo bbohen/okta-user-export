@@ -1,0 +1,10 @@
+.idea
+.vscode
+*.orig
+*.pyc
+*.pyo
+*.swp
+*.tmp
+*.DS_Store
+.env
+users.csv
