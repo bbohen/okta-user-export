@@ -11,11 +11,11 @@ def create(response_data):
 
     for data in response_data:
         if count == 0:
-            headers = data.keys()
+            headers = list(data.keys())
             ordered_headers = [headers[i] for i in RAW_HEADER_ORDER]
             count += 1
 
-        values = data.values()
+        values = list(data.values())
         ordered_values = [values[i] for i in RAW_HEADER_ORDER]
         formatted_row = _format_row(ordered_values, ordered_headers)
         okta_import_row = _format_row_for_okta_import(
