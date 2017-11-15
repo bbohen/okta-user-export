@@ -14,3 +14,4 @@ pylint = "*"
 
 requests = "*"
 python-dotenv = "*"
+tablib = "*"

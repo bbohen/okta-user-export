@@ -2,7 +2,7 @@ import os
 import requests
 from dotenv import load_dotenv
 
-from create_csv import create_csv
+from create import create
 
 DOTENV_PATH = os.path.join(os.path.dirname(__file__), '.env')
 load_dotenv(DOTENV_PATH)
@@ -19,7 +19,7 @@ def init():
     response = requests.get(url, headers=okta_headers)
     response_data = response.json()
 
-    create_csv(response_data)
+    create(response_data)
 
 
 init()
