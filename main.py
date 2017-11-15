@@ -17,6 +17,7 @@ def init():
     }
     url = '{}/api/v1/groups/{}/users'.format(okta_root_url, group_id)
     response = requests.get(url, headers=okta_headers)
+    response.raise_for_status()
     response_data = response.json()
 
     create(response_data)

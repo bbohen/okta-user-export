@@ -1,2 +1,2 @@
-- Create format that exports into a format that can be imported by another Okta instance
+- Handle pagination
 - Refactor create into a class that handles fetching the users as well
