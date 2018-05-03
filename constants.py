@@ -1,21 +1,24 @@
+# Configure how the colums should be ordered
 RAW_HEADER_ORDER = [9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 10]
+# Name the custom formatted headers
 FORMATTED_HEADERS = [
-    'Id',
+    'Credentials',
+    'ID',
     'Status',
-    'First Name',
-    'Last Name',
-    'Primary Phone',
-    'Email',
-    'Profile',
-    'Password Last Changed',
     'Created',
     'Activated',
-    'Last Updated',
-    'Link',
+    'Status Changed',
     'Last Login',
-    'Credentials',
-    'Status Changed'
+    'Last Updated',
+    'Password Changed',
+    'First Name',
+    'Last Name',
+    'Phone',
+    'Login',
+    'Profile',
+    'Link'
 ]
+# Match the naming conventions needed for Okta user import by CSV
 OKTA_IMPORT_FIELDS = [
     'login',
     'firstName',

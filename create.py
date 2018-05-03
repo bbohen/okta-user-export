@@ -45,6 +45,7 @@ def create(response_data):
 
 
 def _format_row(ordered_values, headers):
+    """ Outputs a row that uses custom formatting for easier human review """
     count = 0
     formatted_row = []
 
@@ -66,6 +67,7 @@ def _format_row(ordered_values, headers):
 
 
 def _format_row_for_okta_import(values, headers):
+    """ Outputs a row that can be used by Okta to import users """
     count = 0
     formatted_row = []
 
